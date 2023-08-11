@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+        <title> Rack. </title>
+    </head>
+
+    <body>
+        <div class="content card">
+
+            <div class="delete-modal" id="delete-modal">
+                <div class="delete-modal-body">
+                    <h2> Delete Confirmation! </h2>
+                    <div class="buttons">
+                        <button type="button" class="cancel-btn"> Cancel </button>
+                        <button type="button" class="delete-btn"> Delete </button>
+                    </div>
+                </div>
+            </div>
+
+            <header>
+                <h1> Rack. </h1>
+            </header>
+
+            <main>
+                <div id="overlay"></div>
+                <div id="overlay-2"></div>
+
+                <section class="input-book"> 
+                    <div class="insert-modal" id="insert-modal">
+                        <div class="modal-header">
+                            <h2> Insert Data Buku </h2>
+                        </div>
+    
+                        <div class="modal-body">
+                            <form action="" id="form">
+    
+                                <div class="form-group">
+                                    <label for="judul-buku"> Judul Buku </label>
+                                    <input type="text" class="form-input" name="judul-buku" id="judul-buku" required>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="tahun-terbit"> Tahun Terbit </label>
+                                    <input type="date" class="form-input" name="tahun-terbit" id="tahun-terbit" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="nama-penulis"> Nama Penulis </label>
+                                    <input type="text" class="form-input" name="nama-penulis" id="nama-penulis" required>
+                                </div>
+    
+                                <div class="form-buttons">
+                                    <button type="button" class="cancel-btn"> Cancel </button>
+                                    <input type="submit" class="insert-btn" value="Insert Book">
+                                </div>
+    
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="opening-container">
+                        <h2> Your online book shelves </h2>
+                        <p> Maintain your books online </p>
+                        <button type="button" class="insert-button"> Insert </button>
+                    </div>
+
+                    <div class="top-3-container">
+                        <h2> Books Reccomendation </h2>
+
+                        <div class="top-3-books">
+                            <div class="img-1">
+                                <img src="Assets/vinci.jpg" alt="Da Vinci Code" id="vinci">
+                                <h2> The Da Vinci Code </h2>
+                            </div>
+    
+                            <div class="img-2">
+                                <img src="Assets/hobbit.jpg" alt="The Hobbit" id="hobbit">
+                                <h2> The Hobbit </h2>
+                            </div>
+    
+                            <div class="img-3">
+                                <img src="Assets/potter.jpg" alt="Harry Potter" id="potter">
+                                <h2> Harry Potter </h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="rak mini"></div>
+
+                <div class="search-bar">
+                    <label for="search-bar"> &#128270 </label>
+                    <input type="text" class="search-bar" name="search-bar" id="search-bar" placeholder="Cari Buku....">
+                    <label for="search-bar"> &#128269 </label>
+                    <br>
+                    <h3> Book Not Found (?) </h3>
+                </div>
+
+                <div class="rak"></div>
+
+                <section class="belum-selesai" id="books">
+                    <h2> Unfinished Books </h2>
+
+                    <div class="books-container">
+                    </div>
+                </section>
+                
+                <div class="rak jumbo"></div>
+
+                <section class="selesai">
+                    <h2> Finished Books </h2>
+                    <div class="books-finished-container">
+                    </div>
+                </section>
+
+            </main>
+        </div>
+
+        <script src="Script/index.js"></script>
+    </body>
+</html>
